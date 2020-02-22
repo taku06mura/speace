@@ -1,4 +1,27 @@
 .sidebar
   %nav.mypage
     %li.mypage__list
-      = link_to "#"
+      .mypage__list__contents
+        = link_to "#",class:"mypage__list__contents__text" do
+          ホーム
+          %i.fas.fa-home
+    %li.mypage__list
+      .mypage__list__contents
+        = link_to "#",class:"mypage__list__contents__text" do
+          プロフィール
+          %i.fas.fa-user
+    %li.mypage__list
+      .mypage__list__contents
+        = link_to "#",class:"mypage__list__contents__text" do
+          お気に入り
+          %i.far.fa-star
+    %li.mypage__list
+      .mypage__list__contents
+        = link_to "#",class:"mypage__list__contents__text" do
+          メッセージ
+          %i.far.fa-envelope
+    %li.mypage__list
+      .mypage__list__contents
+        = link_to "#",class:"mypage__list__contents__text" do
+          チーム
+          %i.fas.fa-users
