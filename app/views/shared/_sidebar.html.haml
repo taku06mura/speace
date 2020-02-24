@@ -1,27 +1,45 @@
 .sidebar
   %nav.mypage
     %li.mypage__list
-      .mypage__list__contents
-        = link_to "#",class:"mypage__list__contents__text" do
+      = link_to "#",class:"mypage__list__contents" do
+        .mypage__list__contents__text
           ホーム
-          %i.fas.fa-home
+        .mypage__list__contents__icon
+          = icon('fas', 'home')
     %li.mypage__list
-      .mypage__list__contents
-        = link_to "#",class:"mypage__list__contents__text" do
+      = link_to "#",class:"mypage__list__contents" do
+        .mypage__list__contents__text
           プロフィール
-          %i.fas.fa-user
+        .mypage__list__contents__icon
+          = icon('fas', 'user')
     %li.mypage__list
-      .mypage__list__contents
-        = link_to "#",class:"mypage__list__contents__text" do
+      = link_to "#",class:"mypage__list__contents" do
+        .mypage__list__contents__text
           お気に入り
-          %i.far.fa-star
+        .mypage__list__contents__icon
+          = icon('far', 'star')
     %li.mypage__list
-      .mypage__list__contents
-        = link_to "#",class:"mypage__list__contents__text" do
+      = link_to "#",class:"mypage__list__contents" do
+        .mypage__list__contents__text
           メッセージ
-          %i.far.fa-envelope
+        .mypage__list__contents__icon
+          = icon('far', 'envelope')
     %li.mypage__list
-      .mypage__list__contents
-        = link_to "#",class:"mypage__list__contents__text" do
+      = link_to "#",class:"mypage__list__contents" do
+        .mypage__list__contents__text
           チーム
-          %i.fas.fa-users
+        .mypage__list__contents__icon
+          = icon('fas', 'users')
+    %li.mypage__list
+      = link_to "#",class:"mypage__list__contents" do
+        .mypage__list__contents__text
+          検索する
+        .mypage__list__contents__icon
+          = icon('fas', 'search')
+
+    %li.mypage__recruit
+      = link_to "#",class:"mypage__recruit__box" do
+        .mypage__recruit__box__icon
+          = icon('fas', 'comment-dots')
+        .mypage__recruit__box__text
+          募集する
