@@ -1,17 +1,23 @@
 .sidebar {
   width: 500px;
   position: fixed;
-  padding-top: 100px;
+}
+
+.title {
+  font-size: 40px;
+  color: darkgray;
+  text-decoration: none;
 }
 
 .mypage {
-  width: 300px;
+  width: 280px;
   margin: auto;
   display: block;
   list-style: none;
   &__list {
     background-color: lightblue;
     border-radius: 10px;
+    text-decoration: none;
     &__contents {
       padding: 20px;
       justify-content: space-between;
@@ -20,25 +26,6 @@
       font-size: 24px;
       color: black;
       font-weight: 400;
-    }
-  }
-  &__recruit {
-    width : 200px;
-    position: absolute;
-    background-color: lemonchiffon;
-    margin: 50px 0 0 ;
-    text-align: center;
-    border-radius: 30%;
-    &__box {
-      display: inline-block;
-      color: black;
-      &__icon {
-        font-size: 60px;
-
-      }
-      &__text {
-        font-size: 20px;
-      }
     }
   }
 }
