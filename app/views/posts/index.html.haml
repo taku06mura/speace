@@ -1,7 +1,8 @@
-= render 'shared/sidebar'
+%main.main
+  = render 'shared/sidebar'
 
-.contents
-  - @posts.each do |post|
-    .content_post{:style => "background-image: url(#{post.image});"}
-      = simple_format(post.text)
+  .contents
+    - @posts.each do |post|
+      .content_post{:style => "background-image: url(#{post.image});"}
+        = simple_format(post.text)
 
