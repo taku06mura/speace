@@ -1,3 +1,7 @@
-.wrapper
-  = render 'shared/header1'
-  = render 'shared/sidebar'
+= render 'shared/sidebar'
+
+.contents
+  - @posts.each do |post|
+    .content_post{:style => "background-image: url(#{post.image});"}
+      = simple_format(post.text)
+
