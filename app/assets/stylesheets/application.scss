@@ -1,7 +1,6 @@
 @import "modules/reset";
 @import "config/colors";
 @import "modules/main";
-@import "modules/contents";
 @import "modules/sidebar";
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
@@ -9,6 +8,7 @@
 @import "font-awesome";
 @import "modules/posts";
 @import "posts/new";
+@import "posts/index";
 @import "modules/user";
 @import "modules/flash";
 

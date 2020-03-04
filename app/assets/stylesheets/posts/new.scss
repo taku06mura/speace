@@ -1,22 +1,12 @@
-.contents{
-  display: block;
-  margin-top: 60px;
-}
-
-.container {
-  width: 700px;
-  float: left;
-}
-
 .form {
   box-sizing: border-box;
-  margin: auto;
+
   &__title {
     border: 2px solid #38aef0;
     width: 600px;
     height: 50px;
     border-radius: 10px;
-    padding: 8px
+    padding: 10px
   }
   &__text {
     border: 2px solid #38aef0;

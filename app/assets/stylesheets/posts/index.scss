@@ -1,0 +1,19 @@
+.content {
+  width: 600px;
+  &__info {
+    display: flex;
+    font-size: 24px;
+
+    &__name {
+      font-weight: 500;
+      margin-right: 50px;
+    }
+    &__date{
+      font-size: 16px;
+    }
+  }
+  &__main {
+    font-size: 24px;
+    border-bottom: solid darkgrey;
+  }
+}
