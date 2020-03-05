@@ -1,0 +1,17 @@
+%main.main
+  = render 'shared/sidebar'
+
+  .contents
+    .container
+      .content__info
+        .content__info__name
+          = @post.user.name
+        .content__info__date
+          = @post.created_at.strftime("%Y/%m/%d %H:%M")
+      .content__main
+        .content__main__title
+          = @post.title
+        .content__main__text
+          = @post.text
+          - if @post.image.present?
+            = image_tag @post.image.url, class: "content__main__image"
