@@ -13,5 +13,5 @@
           = @post.title
         .content__main__text
           = @post.text
-        .content__main__image
-          = @post.image
+          - if @post.image.present?
+            = image_tag @post.image.url, class: "content__main__image"

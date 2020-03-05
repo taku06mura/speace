@@ -16,5 +16,4 @@
                 = post.title
               .content__main__text
                 = post.text
-              .content__main__image
-                = post.image
+              = image_tag post.image.url, class: "content__main__image" if post.image.present?
