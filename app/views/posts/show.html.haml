@@ -8,6 +8,15 @@
           = @post.user.name
         .ps-content__info__date
           = @post.created_at.strftime("%Y/%m/%d %H:%M")
+        .ps-content__info__edit
+          - if user_signed_in? && current_user.id == @post.user_id
+            .more
+              %span= image_tag 'arrow_top.png'
+              %ul.more_list
+                %li
+                  = link_to '編集', "/posts/#{@post.id}/edit", method: :get
+                %li
+                  = link_to '削除', "/posts/#{@post.id}", method: :delete
       .ps-content__main
         .ps-content__main__title
           = @post.title

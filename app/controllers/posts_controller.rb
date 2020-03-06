@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  # before_action :set_post
+  # before_action :set_post, only:[:show, :edit]
 
   def index
     @posts = Post.all
@@ -16,6 +16,11 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+  end
+
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy
   end
 
   private
