@@ -3,15 +3,15 @@
 
   .contents
     .container
-      .content__info
-        .content__info__name
+      .ps-content__info
+        .ps-content__info__name
           = @post.user.name
-        .content__info__date
+        .ps-content__info__date
           = @post.created_at.strftime("%Y/%m/%d %H:%M")
-      .content__main
-        .content__main__title
+      .ps-content__main
+        .ps-content__main__title
           = @post.title
-        .content__main__text
+        .ps-content__main__text
           = @post.text
           - if @post.image.present?
-            = image_tag @post.image.url, class: "content__main__image"
+            = image_tag @post.image.url, class: "ps-content__main__image"

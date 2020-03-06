@@ -1,0 +1,19 @@
+.ps-content {
+  width: 600px;
+  color: #000000;
+  &__info {
+    display: flex;
+    font-size: 24px;
+
+    &__name {
+      font-weight: 500;
+      margin-right: 50px;
+    }
+    &__date{
+      font-size: 16px;
+    }
+  }
+  &__main {
+    font-size: 24px;
+  }
+}
