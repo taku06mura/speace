@@ -13,7 +13,12 @@
     }
   }
   &__main {
-    font-size: 24px;
     border-bottom: solid darkgrey;
+    &__title{
+      font-size: 24px;
+    }
+    &__text {
+      font-size: 18px;
+    }
   }
 }

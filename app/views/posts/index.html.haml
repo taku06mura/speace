@@ -15,5 +15,5 @@
               .content__main__title
                 = post.title
               .content__main__text
-                = post.text
+                = simple_format(post.text)
               = image_tag post.image.url,class: "content__main__image" if post.image.present?
