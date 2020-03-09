@@ -20,11 +20,12 @@
       z-index: 2;
       text-align: right;
       color: grey;
-      margin-left: 50px;
+      margin-left: 150px;
       &:hover ul.more_list {
         display: block;
       }
       ul.more_list {
+        position: absolute;
         text-align: left;
         width: 80px;
         right: 0;
@@ -42,7 +43,6 @@
           a {
             display: block;
             padding: 5px;
-          
           }
         }
       }
