@@ -20,7 +20,7 @@
       z-index: 2;
       text-align: right;
       color: grey;
-      margin-left: 150px;
+      margin-left: 320px;
       &:hover ul.more_list {
         display: block;
       }
@@ -49,6 +49,12 @@
     }
   }
   &__main {
-    font-size: 24px;
+    border-bottom: solid darkgrey;
+    &__title{
+      font-size: 24px;
+    }
+    &__text {
+      font-size: 18px;
+    }
   }
 }
