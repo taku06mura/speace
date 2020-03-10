@@ -21,6 +21,6 @@
         .ps-content__main__title
           = @post.title
         .ps-content__main__text
-          = @post.text
+          = simple_format(@post.text)
           - if @post.image.present?
             = image_tag @post.image.url, class: "ps-content__main__image"

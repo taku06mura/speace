@@ -15,7 +15,6 @@
     }
     .more {
       position: absolute;
-      position: fixed;
       cursor: pointer;
       z-index: 2;
       text-align: right;
@@ -55,6 +54,10 @@
     }
     &__text {
       font-size: 18px;
+    }
+    &__image {
+      max-width: 600px;
+      max-height: 400px;
     }
   }
 }
