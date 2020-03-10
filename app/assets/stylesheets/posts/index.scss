@@ -20,5 +20,9 @@
     &__text {
       font-size: 18px;
     }
+    &__image {
+      max-width: 600px;
+      max-height: 400px;
+    }
   }
 }
