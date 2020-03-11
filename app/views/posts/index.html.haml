@@ -16,3 +16,4 @@
             .content__main__text
               = simple_format(post.text)
             = image_tag post.image.url,class: "content__main__image" if post.image.present?
+    = paginate @posts
