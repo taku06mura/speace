@@ -3,6 +3,9 @@
   color: darkgray;
   text-decoration: none;
 }
+.title:hover{
+  text-decoration: none;
+}
 
 .mypage {
   width: 280px;
@@ -23,4 +26,7 @@
       font-weight: 400;
     }
   }
+}
+.mypage__list__contents:hover{
+  text-decoration: none;
 }

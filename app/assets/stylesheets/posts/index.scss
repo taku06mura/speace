@@ -19,10 +19,14 @@
     }
     &__text {
       font-size: 18px;
+      color: black;
     }
     &__image {
       max-width: 600px;
       max-height: 400px;
     }
+  }
+  &__main:hover{
+    text-decoration: none;
   }
 }
