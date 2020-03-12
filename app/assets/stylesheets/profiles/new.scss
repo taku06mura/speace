@@ -1,0 +1,43 @@
+.form {
+  box-sizing: border-box;
+
+  &__nickname {
+    border: 2px solid #38aef0;
+    width: 600px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px
+  }
+  &__introduction {
+    border: 2px solid #38aef0;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 20px;
+  }
+  &__icon {
+    display: flex;
+    display: block;
+    text-align: right;
+    width: 600px;
+    &__image {
+      vertical-align: -8px;
+      font-size: 56px;
+      cursor: pointer;
+      text-align: right;
+      color: #38aef0;
+    }
+    &__submit {
+      font-size: 30px;
+      border-radius: 12px;
+      margin-left: 16px;
+      cursor: pointer;
+      background-color: #38aef0;
+      color: white;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+}
