@@ -1,0 +1,15 @@
+%main.main
+  = render "shared/sidebar"
+  .contents
+    .container
+      .user-info
+        .user-info__image
+          = @profile.image
+        .user-info__box
+          .user-info__box__name
+            = @profile.nickname
+          .user-info__box__edit
+            = link_to "編集する", profile_new_path
+      .user-introduction
+        .user-introduction__text
+          = @profile.introduction

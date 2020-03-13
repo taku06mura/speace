@@ -16,6 +16,7 @@
     border-bottom: solid darkgrey;
     &__title{
       font-size: 24px;
+      color: #000000;
     }
     &__text {
       font-size: 18px;
@@ -30,3 +31,11 @@
     text-decoration: none;
   }
 }
+.contents li {
+  border-bottom: groove;
+  margin-bottom: 50px;
+}
+
+// .content__main {
+//   border-bottom: solid darkgrey;
+// }
