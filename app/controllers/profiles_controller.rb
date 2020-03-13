@@ -6,7 +6,6 @@ class ProfilesController < ApplicationController
 
   def create
     profile = Profile.create(profile_params)
-    
   end
 
   private
