@@ -9,8 +9,7 @@
           .user-info__box__name
             = @profile.nickname
           .user-info__box__edit
-            -# = link_to "編集する", profile_new_path
+            = link_to "編集する", edit_profile_path
       .user-introduction
         .user-introduction__text
           = simple_format(@profile.introduction)
-          
