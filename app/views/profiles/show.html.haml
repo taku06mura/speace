@@ -12,4 +12,5 @@
             -# = link_to "編集する", profile_new_path
       .user-introduction
         .user-introduction__text
-          = @profile.introduction
+          = simple_format(@profile.introduction)
+          
