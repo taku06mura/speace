@@ -9,6 +9,10 @@ class ProfilesController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @profile = Profile.find(params[:id])
+  end
+
   private
 
   def profile_params

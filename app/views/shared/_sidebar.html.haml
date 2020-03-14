@@ -15,11 +15,18 @@
         .mypage__list__contents__icon
           = icon('fas', 'cog')
     %li.mypage__list
-      = link_to new_profile_path(current_user),class:"mypage__list__contents" do
-        .mypage__list__contents__text
-          プロフィール
-        .mypage__list__contents__icon
-          = icon('fas', 'user')
+      - if current_user.profile.blank?
+        = link_to new_profile_path(current_user),class:"mypage__list__contents" do
+          .mypage__list__contents__text
+            プロフィール
+          .mypage__list__contents__icon
+            = icon('fas', 'user')
+      - else
+        = link_to profile_path(current_user),class: "mypage__list__contents" do
+          .mypage__list__contents__text
+            プロフィール
+          .mypage__list__contents__icon
+            = icon('fas', 'user')
     %li.mypage__list
       = link_to "#",class:"mypage__list__contents" do
         .mypage__list__contents__text
