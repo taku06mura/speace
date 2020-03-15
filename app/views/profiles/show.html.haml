@@ -3,8 +3,8 @@
   .contents
     .container
       .user-info
-        .user-info__image
-          = @profile.image
+        - if @profile.image.present?
+          = image_tag @profile.image.url, class: "user-info__image"
         .user-info__box
           .user-info__box__name
             = @profile.nickname

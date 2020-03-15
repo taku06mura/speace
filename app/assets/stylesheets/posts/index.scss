@@ -13,7 +13,9 @@
     }
   }
   &__main {
-    border-bottom: solid darkgrey;
+    border-bottom: solid 1px darkgrey;
+    margin-bottom: 50px;
+    display: block;
     &__title{
       font-size: 24px;
       color: #000000;
@@ -25,17 +27,10 @@
     &__image {
       max-width: 600px;
       max-height: 400px;
+      margin-bottom: 10px;
     }
   }
   &__main:hover{
     text-decoration: none;
   }
 }
-.contents li {
-  border-bottom: groove;
-  margin-bottom: 50px;
-}
-
-// .content__main {
-//   border-bottom: solid darkgrey;
-// }
