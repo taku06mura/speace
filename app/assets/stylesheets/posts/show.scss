@@ -48,7 +48,8 @@
     }
   }
   &__main {
-    border-bottom: solid darkgrey;
+    margin-bottom: 50px;
+    display: block;
     &__title {
       font-size: 24px;
     }
