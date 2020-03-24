@@ -1,0 +1,12 @@
+%main.main
+  = render 'shared/sidebar'
+  .contents
+    .container
+      = form_with model: @post, class: :form, local: true do |f|
+        = f.text_field :title, placeholder: :title, class: :form__title
+        = f.text_area :text, placeholder: :text, class: :form__text
+        .form__icon
+          = f.label :image, class: :form__icon__image do
+            = icon('fas', 'image')
+            = f.file_field :image, class: :hidden
+          = f.submit "update", class: :form__icon__submit
