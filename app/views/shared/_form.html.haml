@@ -1,0 +1,25 @@
+= form_for @team do |f|
+  - if @team.errors.any?
+    .chat-team-form__errors
+      %h2= "#{team.errors.full_messages.count}件のエラーが発生しました。"
+      %ul
+        - team.errors.full_messages.each do |message|
+          %li= message
+  .chat-team-form__field
+    .chat-team-form__field--left
+      = f.label :name, class: 'chat-team-form__label'
+    .chat-team-form__field--right
+      = f.text_field :name, class: 'chat__team_name chat-team-form__input', placeholder: 'チーム名を入力してください'
+  .chat-team-form__field.clearfix
+    / この部分はインクリメンタルサーチ（ユーザー追加の非同期化のときに使用します
+  .chat-team-form__field.clearfix
+    .chat-team-form__field--left
+      %label.chat-team-form__label{:for => "chat_team_チャットメンバー"} チームメンバー
+    .chat-team-form__field--right
+      / グループ作成機能の追加時はここにcollection_check_boxesの記述を入れてください
+      = f.collection_check_boxes :user_ids, User.all, :id, :name
+      / この部分はインクリメンタルサーチ（ユーザー追加の非同期化のときに使用します
+  .chat-team-form__field.clearfix
+    .chat-team-form__field--left
+    .chat-team-form__field--right
+      = f.submit class: 'chat-team-form__action-btn'
