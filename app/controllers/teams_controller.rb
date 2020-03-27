@@ -28,8 +28,8 @@ class TeamsController < ApplicationController
   end
 
   private
-  def team_prarams
-    params.require(team).permit(:mame, user_ids: [])
+  def team_params
+    params.require(:team).permit(:name, user_ids: [])
   end
 
 end
