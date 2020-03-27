@@ -1,0 +1,8 @@
+%main.main
+  = render 'shared/sidebar'
+
+  .chat-team-form
+    - current_user.teams.each do|team|
+      .teams__list
+        .teams__list__team-name
+          = team.name

@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root "posts#index"
   resources :users, only: [:edit, :update]
   resources :posts
-  resources :profiles, only:[:new, :create, :show, :edit, :update]
-  resources :teams, only:[:new, :create, :edit, :update]
+  resources :profiles, only: [:new, :create, :show, :edit, :update]
+  resources :teams, only: [:index, :new, :create, :edit, :update]
 end
