@@ -2,7 +2,14 @@
   = render 'shared/sidebar'
 
   .chat-team-form
-    - current_user.teams.each do|team|
-      .teams__list
-        .teams__list__team-name
-          = team.name
+    - if current_user.teams.blank?
+      所属チームはありません
+    - else
+      - current_user.teams.each do|team|
+        .teams__list
+          .teams__list__team-name
+            = link_to "#" do
+              = team.name
+          .teams__list__icon
+            = link_to edit_team_path(current_user) do
+              = icon('fas', 'cog')
