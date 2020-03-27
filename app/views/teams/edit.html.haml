@@ -1,3 +1,6 @@
-.chat-team-form
-  %h1 チャットグループ編集
-  = render 'shared/form', locals: { team: @team }
+%main.main
+  = render 'shared/sidebar'
+  
+  .chat-team-form
+    %h1 チャットグループ編集
+    = render 'shared/form', locals: { team: @team }
