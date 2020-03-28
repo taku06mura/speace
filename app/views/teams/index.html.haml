@@ -14,3 +14,6 @@
           .teams__list__icon
             = link_to edit_team_path(current_user) do
               = icon('fas', 'cog')
+    .chat-team-form__new
+      = link_to new_team_path(current_user) do
+        新規チーム作成

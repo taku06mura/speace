@@ -78,6 +78,9 @@ li {
       width: 70%;
     }
   }
+  &__new {
+    font-size: 24px;
+  }
 }
 
 .chat-team-user {
@@ -104,6 +107,12 @@ li {
       color: #f05050;
     }
   }
+}
+
+.teams-not-exist {
+  font-size: 24px;
+  width: 400px;
+  text-align: center;
 }
 
 .teams__list {
