@@ -3,7 +3,8 @@
 
   .chat-team-form
     - if current_user.teams.blank?
-      所属チームはありません
+      .teams-not-exist
+        所属チームはありません
     - else
       - current_user.teams.each do|team|
         .teams__list
