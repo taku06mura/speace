@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :posts
   resources :profiles, only: [:new, :create, :show, :edit, :update]
   resources :teams, only: [:index, :new, :create, :edit, :update]
-    resources messages, only: [:index, :create]
+    resources :messages, only: [:index, :create]
 end
