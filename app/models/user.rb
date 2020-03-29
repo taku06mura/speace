@@ -9,4 +9,5 @@ class User < ApplicationRecord
   has_one :profile, dependent: :destroy
   has_many :team_users
   has_many :teams, through: :team_users
+  has_many :messages
 end
