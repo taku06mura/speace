@@ -12,7 +12,7 @@
             = link_to "#" do
               = team.name
           .teams__list__icon
-            = link_to edit_team_path(current_user.id) do
+            = link_to edit_team_path(team.id) do
               = icon('fas', 'cog')
     .chat-team-form__new
       = link_to new_team_path do
