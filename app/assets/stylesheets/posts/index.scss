@@ -3,10 +3,10 @@
   color: #000000;
   &__info {
     display: flex;
-    font-size: 24px;
+    font-size: 32px;
     &__name {
       font-weight: 500;
-      margin-right: 50px;
+      margin-right: 100px;
     }
     &__date{
       font-size: 16px;
@@ -18,10 +18,11 @@
     display: block;
     &__title{
       font-size: 24px;
+      font-weight: 2px;
       color: #000000;
     }
     &__text {
-      font-size: 18px;
+      font-size: 16px;
       color: black;
     }
     &__image {
