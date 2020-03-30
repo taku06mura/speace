@@ -9,7 +9,7 @@
       - current_user.teams.each do|team|
         .teams__list
           .teams__list__team
-            = link_to "#" do
+            = link_to team_messages_path(team) do
               .teams__list__team__name
                 = team.name
               .teams__list__team__message

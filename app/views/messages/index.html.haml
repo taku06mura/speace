@@ -1,5 +1,10 @@
 %main.main
   = render "shared/sidebar"
+  .message-info
+    .message-info__team
+      = @team.name
+      .message-info__team__member
+        
   .messages
     = render @messages
   .form
