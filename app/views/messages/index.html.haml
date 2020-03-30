@@ -1,5 +1,7 @@
 %main.main
   = render "shared/sidebar"
+  .messages
+    = render @messages
   .form
     = form_for [@team, @message] do |f|
       = f.text_field :content, class: 'form__message', placeholder: 'type a message'
