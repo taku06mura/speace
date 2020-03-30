@@ -34,7 +34,7 @@
         .mypage__list__contents__icon
           = icon('far', 'star')
     %li.mypage__list
-      = link_to "#",class:"mypage__list__contents" do
+      = link_to messages_path(:team_id),class:"mypage__list__contents" do
         .mypage__list__contents__text
           メッセージ
         .mypage__list__contents__icon
