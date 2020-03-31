@@ -1,6 +1,32 @@
 .team-contents {
   width: 640px;
   margin: 60px 30px 0;
+  &__message-list {
+    overflow: scroll;
+    height: calc( 100vh - 190px);
+    background-color: #fafafa;
+    padding: 35px 40px;
+    .message{
+      padding-bottom: 46px;
+      .upper-message {
+        display: flex;
+        margin-bottom: 12px;
+        &__user-name {
+          font-size: 16px;
+          color: #333333;
+        }
+        &__date {
+          font-size: 12px;
+          color: #999999;
+          margin-left: 10px;
+        }
+      }
+      .lower-message {
+        font-size: 14px;
+        color: #434A54;
+      }
+    }
+  }
   .form {
     background-color: #DDDDDD;
     box-sizing: border-box;
