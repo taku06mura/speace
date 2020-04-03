@@ -53,6 +53,6 @@ Password: 1111
 
 ## テストアカウント
 
-アドレス　test1@gmail.com
+アドレス: test1@gmail.com
 
-パスワード　t12345678
+パスワード: t12345678
