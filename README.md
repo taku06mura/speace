@@ -47,7 +47,9 @@ http://18.178.216.227/
 
 ## Basic認証
 
-ID:spc1 Password:1111
+ID:spc1 
+
+Password:1111
 
 ## テストアカウント
 
