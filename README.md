@@ -6,40 +6,39 @@
 
 <img src="https://user-images.githubusercontent.com/58324998/74326220-5d77fb00-4dcd-11ea-9427-e226680a0560.png" width="140px"><img src="https://user-images.githubusercontent.com/58324998/74326349-9021f380-4dcd-11ea-8f62-f73c3cde5ca9.png" width="150px"><img src="https://user-images.githubusercontent.com/58324998/74326292-78e30600-4dcd-11ea-9061-7c579fb3a215.png" width="190px">
 
+This is a matching app specialized in sports.
 
-スポーツに特化したマッチングアプリです。
+・ User registration, login, logout
 
-・ユーザー登録、ログイン、ログアウト
+・ Participant recruitment, posting function
 
-・参加者募集、投稿機能
+・ Team creation function
 
-・チーム作成機能
-
-・グループチャット機能
-
-
-## 制作背景
-スポーツが好きで運動したいけど、チームに所属していない。チームに所属する気はないけれど気軽に参加したい人と、
-
-試合がしたいけど人数が足りない。チームの人数を増やしてチームを強化したい人などをつなげる。
-
-またはチームとチームをつなげて試合や大会を開催する為のプラットフォームを作りたいと思ったこと、
-
-私自身、元々所属していたチームが人数不足により活動できなくなった経緯から作成しました。
-
-## 工夫ポイント
-
-ユーザーの目線にたち、SNSのような見やすく、シンプルな見た目にしています。
-
-実際の開発を考え、細かいコミット、機能ごとのプルリクエストを意識しています。
+・ Group chat function
 
 
-# :globe_with_meridians: URL
+## Production background
+I like sports and want to exercise, but I don't belong to a team. With people who do not want to belong to the team but want to feel free to join,
+
+I want to play a game, but there are not enough people. Connect people who want to strengthen the team by increasing the number of teams.
+
+Or I wanted to create a platform to connect teams and teams to hold games and tournaments,
+
+I created it because the team I originally belonged to could not work due to a lack of people.
+
+## Device points
+
+From the user's point of view, it looks simple and looks like SNS.
+
+Considering actual development, we are aware of detailed commits and pull requests for each function.
+
+
+#: globe_with_meridians: URL
 
 http://18.178.216.227/
 
-## テストアカウント
+## Test account
 
-アドレス: test1@gmail.com
+Address: test1@gmail.com
 
-パスワード: t12345678
+Password: t12345678
