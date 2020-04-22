@@ -26,5 +26,4 @@ class MessagesController < ApplicationController
   def set_team
     @team = Team.find(params[:team_id])
   end
-
 end
