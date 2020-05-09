@@ -16,5 +16,4 @@ class Team < ApplicationRecord
       'まだメッセージはありません。'
     end
   end
-  
 end
