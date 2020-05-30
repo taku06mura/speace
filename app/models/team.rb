@@ -19,4 +19,3 @@ class Team < ApplicationRecord
 end
 
 
-
